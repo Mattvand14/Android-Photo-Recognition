@@ -14,7 +14,7 @@ in android text to speech to speak your story
 - Text to Speech
 
 ## Usage
-Simply start the app, then click on either photo or sketch tagger and take a photo or draw something. Then click save, and the
+Simply start the app on Android, then click on either photo or sketch tagger and take a photo or draw something. Then click save, and the
 google vision api will automatically classify it for you and save it to the database with the three most relevant tags. You can then 
 go to story teller and select images for the AI to tell you.
 
