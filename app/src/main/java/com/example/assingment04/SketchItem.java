@@ -1,0 +1,34 @@
+package com.example.assingment04;
+
+import android.graphics.Bitmap;
+
+public class SketchItem {
+    private Bitmap image;
+    private String tags;
+    private String date;
+    private String time;
+
+    public SketchItem(Bitmap image, String tags, String date, String time) {
+        this.image = image;
+        this.tags = tags;
+        this.date = date;
+        this.time = time;
+    }
+
+    public Bitmap getImage() {
+        return image;
+    }
+
+    public String getTags() {
+        return tags;
+    }
+
+    public String getDate() {
+        return date;
+    }
+
+    public String getTime() {
+        return time;
+    }
+}
+

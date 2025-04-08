@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".PhotoActivity">
+
+
+
+    <ImageView
+        android:id="@+id/resultImage"
+        android:layout_width="400dp"
+        android:layout_height="250dp"
+        android:layout_marginTop="5dp"
+        android:layout_gravity="center"
+        android:background="@color/cardview_light_background"
+        />
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="75dp"
+        >
+
+        <TextView
+            android:layout_width="200dp"
+            android:layout_height="50dp"
+            android:layout_marginTop="11dp"
+            android:text="Tags: "
+            android:textAlignment="center"
+            android:textSize="15pt"
+            android:layout_marginRight="5dp"
+            />
+
+        <EditText
+            android:id="@+id/tagInput"
+            android:layout_width="200dp"
+            android:layout_height="50dp"
+            android:layout_marginTop="5dp"
+            android:hint="Enter Tags Here"
+            />
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="75dp">
+
+        <Button
+            android:id="@+id/cameraButton"
+            android:layout_width="200dp"
+            android:layout_height="50dp"
+            android:text="Camera"
+            android:layout_marginEnd="5dp"
+            android:layout_gravity="center"
+            android:onClick="openCamera"
+            />
+
+        <Button
+            android:id="@+id/saveButton"
+            android:layout_width="200dp"
+            android:layout_height="50dp"
+            android:onClick="saveDrawing"
+            android:text="Save"
+            android:layout_gravity="center"
+            />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="75dp"
+        >
+
+        <Button
+            android:layout_width="200dp"
+            android:layout_height="50dp"
+            android:text="Find"
+            android:layout_gravity="center"
+            android:onClick="findPhoto"
+            />
+
+        <EditText
+            android:id="@+id/findInput"
+            android:layout_width="200dp"
+            android:layout_height="50dp"
+            android:layout_gravity="center"
+            android:hint="Find Images Here"
+            />
+
+    </LinearLayout>
+
+    <ListView
+        android:id="@+id/listView"
+        android:layout_width="match_parent"
+        android:layout_height="193dp"
+        android:divider="@color/design_default_color_primary_dark"
+        android:dividerHeight="1dp"/>
+    <Button
+        android:layout_marginTop="10dp"
+        android:layout_width="100dp"
+        android:layout_height="40dp"
+        android:text="Back"
+        android:layout_gravity="center"
+        android:onClick="returnMain"
+        />
+
+
+</LinearLayout>
